@@ -1,29 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div>
-      This is APP components!
-    </div>
-  );
+    return (
+        <div>
+            This is APP components!
+            <Rating/>
+            <Accordion/>
+        </div>
+    );
 }
 
-function Rating () {
-    return(
+function Rating() {
+    return (
         <div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
         </div>
     )
 }
 
+function Star() {
+    return (
+        <div>star</div>
+    )
+}
+
 function Accordion() {
-    return(
+    return (
         <div>
             <h3>Menu</h3>
             <ul>
