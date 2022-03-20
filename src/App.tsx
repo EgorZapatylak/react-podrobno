@@ -13,8 +13,12 @@ function App() {
             {/*Article 1*/}
             {/*<Rating value={3}/>*/}
             <UncontrolledAccordion titleValue={"Menu"}/>
-            <UncontrolledAccordion titleValue={"User"}/>
             <UncontrolledRating/>
+            <OnOff/>
+
+            <Accordion titleValue={"User"} collapsed={false}/>
+            <Rating value={3}/>
+            <OnOff/>
             {/*<Accordion titleValue={"Menu"} collapsed={true}/>*/}
             {/*<Accordion titleValue={"User"} collapsed={false}/>*/}
             {/*Article 2*/}
@@ -24,17 +28,8 @@ function App() {
             {/*<Rating value={3}/>*/}
             {/*<Rating value={4}/>*/}
             {/*<Rating value={5}/>*/}
-            <OnOff/>
-            <OnOff/>
         </div>
     );
 }
-
-function PageTitle(props: any) {
-    return (
-        <h2>{props.title}</h2>
-    )
-}
-
 
 export default App;
